@@ -4,6 +4,9 @@
   "main": "index.js",
   "repository": {},
   "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --config ./webpack.config.dev.js"
+  },
   "dependencies": {
     "babel-preset-react": "^6.23.0",
     "css-loader": "^0.26.1",
