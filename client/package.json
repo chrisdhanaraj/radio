@@ -14,7 +14,7 @@
     "postcss-loader": "^1.3.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-router": "next",
+    "react-router-dom": "next",
     "sass-loader": "^6.0.1",
     "style-loader": "^0.13.1"
   },
@@ -22,6 +22,7 @@
     "autoprefixer": "^6.7.3",
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
+    "babel-plugin-transform-class-properties": "^6.23.0",
     "babel-preset-env": "^1.1.8",
     "react-hot-loader": "3.0.0-beta.6",
     "webpack": "^2.2.1",

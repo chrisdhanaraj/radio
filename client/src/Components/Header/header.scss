@@ -1,0 +1,15 @@
+.header {
+  border-bottom: 1px solid #979797;
+  margin-bottom: 5.625rem;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav__link {
+  color: inherit;
+  display: block;
+  padding: 2rem 1rem;
+  text-decoration: none;
+}
