@@ -1,0 +1,41 @@
+blockquote {
+  background-color: $light-grey;
+  margin-bottom: 50px;
+}
+
+cite {
+  display: inline-block;
+  border-top: 1px solid $grey;
+  padding-top: 20px;
+
+  span {
+    display: block;
+  }
+}
+
+.blockquote-content {
+  padding: 85px 0 50px;
+  margin: 0 auto;
+  width: 532px;
+
+  @media (min-width: 1024px) {
+    width: 618px;
+  }
+
+  p {
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 33px;
+
+    &:before {
+      display: content;
+      color: $purple;
+      content: '“';
+      position: absolute;
+      top: -25px;
+      left: -25px;
+      font-size: 70px;
+    }
+  }
+}

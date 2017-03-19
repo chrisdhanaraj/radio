@@ -17,9 +17,9 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     hot: true,
-    historyApiFallback: true,
     contentBase: resolve(__dirname, 'dist'),
-    publicPath: '/'
+    publicPath: '/',
+    historyApiFallback: true
   },
   module: {
     rules: [
@@ -27,15 +27,6 @@ module.exports = {
         test: /\.js$/,
         use: ['babel-loader'],
         exclude: /node_modules/
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader?importLoaders=1',
-          'postcss-loader',
-          'sass-loader'
-        ]
       }
     ]
   },

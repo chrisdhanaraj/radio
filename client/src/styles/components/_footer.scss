@@ -1,0 +1,27 @@
+.footer-nav {
+  display: flex;
+  border-top: 1px solid #979797;
+  padding: 1rem 0;
+  margin-top: 5.25rem;
+}
+
+.footer-nav-backward,
+.footer-nav-forward {
+  display: flex;
+  align-items: center;
+
+  a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.footer-nav-forward {
+  margin-left: auto;
+}
+
+.nav-label {
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 10px;
+}

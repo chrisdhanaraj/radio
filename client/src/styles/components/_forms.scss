@@ -1,0 +1,102 @@
+.radio-group {
+  display: flex;
+  margin-bottom: 32px;
+
+  strong {
+    color: #000;
+  }
+}
+
+.radio {
+  @include hidden;
+
+  &__label {
+    // Radio Label - fonts and positioning
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+
+  &__appearance {
+    border-radius: 50%;
+    border: 2px solid $grey;
+    display: inline-block;
+    height: 20px;
+    margin-right: .75rem;
+    padding: 0;
+    width: 20px;
+  }
+
+  &:checked + &__label &__appearance {
+    // Styled Radio - checked - background
+    align-items: center;
+    justify-content: center;
+    border-color: $grey;
+    display: flex;
+
+    &:before {
+      // Styled Radio - checked - dot
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $purple;
+    }
+  }
+
+  &:disabled + &__label {
+    // Styled Radio and Label - disabled
+    opacity: .5;
+    cursor: not-allowed;
+  }
+}
+
+.radio__label-group {
+  p {
+    margin: 0;
+  }
+}
+
+label + textarea {
+  margin-top: 24px;
+}
+
+textarea {
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 32px;
+}
+
+.btn {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button; /* for input */
+  -webkit-user-select: none; /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 9px 14px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+}
+
+.btn--primary {
+  background-color: $purple;
+  color: #fff;
+}
