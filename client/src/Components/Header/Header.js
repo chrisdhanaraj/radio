@@ -6,14 +6,10 @@ const Header = props => {
 
   return (
     <header className="header">
-      <img href="/images/eidos.jpg" />
       <ul className="header-nav">
         <li>
-          <Link to="/" className="header__logo header-nav__link">eidos</Link>
-        </li>
-        <li>
           <Link to="/introduction" className="header-nav__link">
-            Mahindra Finance
+            <img src="/images/eidos-logos.png" />
           </Link>
         </li>
       </ul>

@@ -10,7 +10,7 @@ class DecisionOne extends Component {
 
   navigateNext = evt => {
     evt.preventDefault();
-    this.props.push('/entry-new-business');
+    this.props.push('/insurance');
   };
 
   render() {

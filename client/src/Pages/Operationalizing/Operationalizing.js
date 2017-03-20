@@ -22,7 +22,6 @@ class Operationalizing extends Component {
           <p>
             As rural customers were often first-time owners of an asset, the company realized that it could not force-fit a standard product on them. Mahindra Finance also employed local people, who were familiar with the situation on the ground, as field executives. Given the limitations of the rural infrastructure, the field staff personally visited customer's premises to offer loans and to collect cash repayments. Systems were put in place so that the company could approve a loan within two days via a decentralized process that met predetermined criteria. Such face-to-face interactions allowed it to be more responsive to local market demands. Furthermore, about 80% of the monthly receipts was in cash and the company had to establish a robust cash management system to transfer the money on a daily basis to banks cross the country.
           </p>
-
         </section>
 
         <Footer
