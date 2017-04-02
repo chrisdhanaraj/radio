@@ -10,6 +10,9 @@
     "build": "webpack --config ./webpack.config.dev.js || gulp sass",
     "start": "node server.js"
   },
+  "engines": {
+    "node": "6.9.4"
+  },
   "dependencies": {
     "babel-preset-react": "^6.23.0",
     "browser-sync": "^2.18.8",
