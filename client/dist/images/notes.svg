@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4 Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.05843486,12.9866071 L16,12.9866071 L16,0.0647786458 L0,0.0647786458 L0,12.9866071 L2,12.9866071 L2,16 L6.05843486,12.9866071 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="16" height="15.9352214" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="4.0168457" y="7" width="5.9831543" height="1"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="5.9831543" height="1" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Section-1.1" transform="translate(-497.000000, -870.000000)">
+            <g id="Group-5" transform="translate(455.000000, 858.000000)">
+                <g id="Group-4-Copy-4" transform="translate(42.992843, 12.000000)">
+                    <use id="Combined-Shape-Copy" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-4-Copy" fill="#FFFFFF" x="4.0168457" y="5" width="8.02832031" height="1"></rect>
+                    <use id="Rectangle-4-Copy-3" stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
