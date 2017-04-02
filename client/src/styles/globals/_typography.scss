@@ -63,13 +63,13 @@ li {
 }
 
 .mega {
-  font-size: 39px;
+  font-size: 76px;
   margin-bottom: 22px;
 }
 
 .alpha {
   font-size: 25px;
-  margin-bottom: 63px;
+  margin-bottom: 16px;
 }
 
 
@@ -84,7 +84,11 @@ li {
 
 p {
   font-weight: 300;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 28px;
+}
+
+::selection {
+  background: #D0CEF8; 
 }

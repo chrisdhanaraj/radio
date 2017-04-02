@@ -1,17 +1,26 @@
 .header {
-  border-bottom: 1px solid #979797;
   margin-bottom: 5.625rem;
+  padding-left: 1.2rem;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
-  padding: 0 1rem;
 }
 
 .header-nav__link {
   color: inherit;
   display: block;
-  padding: 2rem 1rem;
   text-decoration: none;
+}
+
+.nav-trigger {
+  background-color: $purple;
+  margin-left: auto;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+
+  &__logo {
+    fill: #fff;
+  }
 }

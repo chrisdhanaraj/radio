@@ -67,9 +67,9 @@ class Housing extends Component {
         </blockquote>
         <Page>
           <Footer
-            backwardLabel="04"
+            backwardLabel="01"
             backwardText="Insurance Broking"
-            backwardLink="/insurance"
+            backwardLink="/mahindra-finance/02-1-entry-into-new-business-segments"
           />
         </Page>
       </div>

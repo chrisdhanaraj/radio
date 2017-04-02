@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch
+} from 'react-router-dom';
 
-// Component
-import Header from '../Components/Header';
+// Wrapper
+import PageWrapper from './PageWrapper';
 
 // Pages
 import Home from '../Pages/Home';
@@ -13,7 +18,6 @@ import Entry from '../Pages/Entry';
 import Operationalizing from '../Pages/Operationalizing';
 import Growth from '../Pages/Growth';
 import DecisionOne from '../Pages/DecisionOne';
-import EntryNewBusiness from '../Pages/EntryNewBusiness';
 import Insurance from '../Pages/Insurance';
 import Housing from '../Pages/Housing';
 import DecisionTwo from '../Pages/DecisionTwo';
@@ -22,6 +26,11 @@ import DecisionTwo from '../Pages/DecisionTwo';
 import ScrollToTop from '../utility/ScrollToTop';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    window.localStorage.removeItem('nav');
+  }
+
   render() {
     const location = window.location.pathname;
     const isHome = location === '/';
@@ -29,21 +38,47 @@ class App extends Component {
     return (
       <Router>
         <ScrollToTop>
-          <div>
-            <Header location={window.location.pathname} />
-            <Route exact path="/" component={Introduction} />
-            <Route path="/login" component={Login} />
-            <Route path="/introduction" component={Introduction} />
-            <Route path="/history" component={History} />
-            <Route path="/entry-rural-market" component={Entry} />
-            <Route path="/operationalizing" component={Operationalizing} />
-            <Route path="/growth" component={Growth} />
-            <Route path="/decision-one" component={DecisionOne} />
-            <Route path="/entry-new-business" component={EntryNewBusiness} />
-            <Route path="/Insurance" component={Insurance} />
-            <Route path="/housing" component={Housing} />
-            <Route path="/decision-two" component={DecisionTwo} />
-          </div>
+          <Switch>
+            <Redirect exact path="/" to="/mahindra-finance" />
+            <Route path="/login" component={PageWrapper(Login)} />
+            <Route
+              exact
+              path="/mahindra-finance"
+              component={PageWrapper(Introduction)}
+            />
+            <Route
+              path="/mahindra-finance/01-1-setting-the-scene"
+              component={PageWrapper(History)}
+            />
+            <Route
+              path="/mahindra-finance/01-2-entry-into-rural-market"
+              component={PageWrapper(Entry)}
+            />
+            <Route
+              path="/mahindra-finance/01-4-operationalizing-a-rural-market-strategy"
+              component={PageWrapper(Operationalizing)}
+            />
+            <Route
+              path="/mahindra-finance/01-5-growth-trajectory"
+              component={PageWrapper(Growth)}
+            />
+            <Route
+              path="/mahindra-finance/review1"
+              component={PageWrapper(DecisionOne)}
+            />
+            <Route
+              path="/mahindra-finance/02-1-entry-into-new-business-segments"
+              component={PageWrapper(Insurance)}
+            />
+            <Route
+              path="/mahindra-finance/02-2-housing-finance"
+              component={PageWrapper(Housing)}
+            />
+            <Route
+              path="/mahindra-finance/review2"
+              component={PageWrapper(DecisionTwo)}
+            />
+          </Switch>
         </ScrollToTop>
       </Router>
     );

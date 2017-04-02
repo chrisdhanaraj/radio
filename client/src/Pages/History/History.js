@@ -79,7 +79,7 @@ class History extends Component {
         <Footer
           forwardLabel="02"
           forwardText="Entry into the rural market"
-          forwardLink="/entry-rural-market"
+          forwardLink="/mahindra-finance/01-2-entry-into-rural-market"
         />
       </Page>
     );

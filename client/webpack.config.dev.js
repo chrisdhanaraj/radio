@@ -4,7 +4,7 @@ const { resolve } = require('path');
 module.exports = {
   entry: [
     'react-hot-loader/patch',
-    'webpack-dev-server/client?http://localhost:8080',
+    'webpack-dev-server/client?http://localhost:8088',
     'webpack/hot/only-dev-server',
     './index.js'
   ],
@@ -16,6 +16,7 @@ module.exports = {
   context: resolve(__dirname, 'src'),
   devtool: 'inline-source-map',
   devServer: {
+    port: 8088,
     hot: true,
     contentBase: resolve(__dirname, 'dist'),
     publicPath: '/',

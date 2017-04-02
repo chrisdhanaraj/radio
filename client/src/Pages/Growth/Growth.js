@@ -73,9 +73,9 @@ class Growth extends Component {
         <Footer
           backwardLabel="03"
           backwardText="Operationalizing"
-          backwardLink="/operationalizing"
+          backwardLink="/mahindra-finance/01-4-operationalizing-a-rural-market-strategy"
           forwardText="Review"
-          forwardLink="/decision-one"
+          forwardLink="/mahindra-finance/review1"
         />
       </Page>
     );

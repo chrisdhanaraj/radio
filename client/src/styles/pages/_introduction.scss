@@ -1,12 +1,23 @@
 .introduction {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
-.introduction-header {
+.introduction-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-position-x: 50%;
+  background-color: $purple;
+  background-repeat: no-repeat;
+  background-image: url('/images/intro-photo.jpg');
+  height: 521px;
+  margin-top: -146px;
   margin-bottom: 52px;
   padding-bottom: 38px;
   border-bottom: 1px solid $grey;
+}
+
+.introduction-header {
+  margin-top: 150px;
 }

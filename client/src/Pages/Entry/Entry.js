@@ -44,10 +44,10 @@ class Entry extends Component {
           <Footer
             backwardLabel="01"
             backwardText="History"
-            backwardLink="/history"
+            backwardLink="/mahindra-finance/01-1-setting-the-scene"
             forwardLabel="03"
             forwardText="Operationalizing"
-            forwardLink="/operationalizing"
+            forwardLink="/mahindra-finance/01-4-operationalizing-a-rural-market-strategy"
           />
         </Page>
       </div>

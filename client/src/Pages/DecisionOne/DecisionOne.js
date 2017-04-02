@@ -10,7 +10,9 @@ class DecisionOne extends Component {
 
   navigateNext = evt => {
     evt.preventDefault();
-    this.props.push('/insurance');
+    this.props.history.push(
+      '/mahindra-finance/02-1-entry-into-new-business-segments'
+    );
   };
 
   render() {

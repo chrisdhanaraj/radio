@@ -52,7 +52,7 @@ class Insurance extends Component {
           <Footer
             forwardLabel="05"
             forwardText="Housing Finance"
-            forwardLink="/housing"
+            forwardLink="/mahindra-finance/02-2-housing-finance"
           />
         </Page>
       </div>

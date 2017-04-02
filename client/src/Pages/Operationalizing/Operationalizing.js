@@ -30,7 +30,7 @@ class Operationalizing extends Component {
           backwardLink="/entry"
           forwardLabel="04"
           forwardText="Growth trajectory from 1991 to 2002"
-          forwardLink="/growth"
+          forwardLink="/mahindra-finance/01-5-growth-trajectory"
         />
       </Page>
     );
