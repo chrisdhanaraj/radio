@@ -8,7 +8,7 @@ const renderComponent = Component => {
     <AppContainer>
       <Component />
     </AppContainer>,
-    document.getElementById('eidos')
+    document.getElementById('eidos'),
   );
 };
 
@@ -16,6 +16,11 @@ renderComponent(App);
 
 if (module.hot) {
   module.hot.accept('./Containers/App', () => {
-    render(App);
+    render(
+      <AppContainer>
+        <App />
+      </AppContainer>,
+      document.getElementById('eidos'),
+    );
   });
 }

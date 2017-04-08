@@ -17,7 +17,9 @@
     "babel-preset-react": "^6.23.0",
     "browser-sync": "^2.18.8",
     "classnames": "^2.2.5",
+    "compression": "^1.6.2",
     "css-loader": "^0.26.1",
+    "express": "^4.15.2",
     "history": "^4.6.0",
     "lodash.merge": "^4.6.0",
     "node-sass": "^4.5.0",
@@ -26,11 +28,12 @@
     "react-dom": "^15.4.2",
     "react-history": "^0.18.2",
     "react-icons": "^2.2.3",
+    "react-redux": "^5.0.3",
     "react-router-dom": "^4.0.0",
     "sass-loader": "^6.0.1",
     "style-loader": "^0.13.1",
     "webpack-dev-middleware": "^1.10.1",
-    "webpack-hot-middleware": "^2.17.1"
+    "webpack-hot-middleware": "^2.18.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.3",

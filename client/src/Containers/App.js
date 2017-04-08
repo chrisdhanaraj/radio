@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Redirect,
-  Switch
+  Switch,
 } from 'react-router-dom';
 
 // Wrapper
@@ -34,6 +34,7 @@ class App extends Component {
   render() {
     const location = window.location.pathname;
     const isHome = location === '/';
+    console.log('else');
 
     return (
       <Router>
