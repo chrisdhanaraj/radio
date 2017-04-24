@@ -5,7 +5,7 @@ import Header from '../Components/Header';
 import SideNav from '../Components/SideNav';
 import Content from '../Components/Content';
 
-export default class Bluemix extends Component {
+export default class App extends Component {
   state = {
     appMenuOpen: false,
     globalMenuOpen: false,

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import Bluemix from './Containers/Bluemix';
+import App from './Containers/App';
 
 const renderComponent = Component => {
   render(
@@ -12,13 +12,13 @@ const renderComponent = Component => {
   );
 };
 
-renderComponent(Bluemix);
+renderComponent(App);
 
 if (module.hot) {
-  module.hot.accept('./Containers/Bluemix', () => {
+  module.hot.accept('./Containers/App', () => {
     render(
       <AppContainer>
-        <Bluemix grid />
+        <App grid />
       </AppContainer>,
       document.getElementById('app')
     );
