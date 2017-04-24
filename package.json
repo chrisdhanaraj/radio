@@ -8,7 +8,7 @@
     "fix": "eslint --fix **/*.js",
     "style": "gulp serve",
     "dev": "webpack-dev-server --config ./webpack.config.dev.js",
-    "build": "webpack --config ./webpack.config.dev.js || gulp sass",
+    "build": "webpack --config ./webpack.config.dev.js -p || gulp sass",
     "start": "node app.js"
   },
   "engines": {
@@ -22,7 +22,6 @@
     "classnames": "^2.2.5",
     "compression": "^1.6.2",
     "express": "^4.15.2",
-    "mongoose": "^4.9.3",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-router-dom": "^4.0.0",
@@ -59,52 +58,11 @@
     "plugins": [
       "react"
     ],
+    "extends": "eslint:recommended",
     "env": {
       "browser": true,
       "es6": true,
       "node": true
-    },
-    "extends": "airbnb",
-    "rules": {
-      "arrow-parens": [
-        0
-      ],
-      "comma-dangle": [
-        0
-      ],
-      "no-else-return": [
-        0
-      ],
-      "no-unused-vars": [
-        "warn",
-        {
-          "ignoreRestSiblings": true
-        }
-      ],
-      "class-methods-use-this": [
-        0
-      ],
-      "no-underscore-dangle": [
-        0
-      ],
-      "react/jsx-closing-bracket-location": [
-        0
-      ],
-      "react/jsx-indent-props": [
-        0
-      ],
-      "react/jsx-indent": [
-        0
-      ],
-      "react/prefer-stateless-function": [
-        0
-      ],
-      "react/prop-types": [
-        0
-      ],
-      "react/jsx-filename-extension": [
-        0
-      ]
     }
   }
 }
