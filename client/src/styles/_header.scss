@@ -1,0 +1,73 @@
+.l0-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #C4C4C4;
+  height: 50px;
+  align-items: center;
+
+  &.bluemix {
+    color: #fff;
+
+    svg {
+      fill: #fff;
+    }
+  }
+}
+.product-title {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 24px;
+    width: 24px;
+  }
+
+  h1 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.app-space {
+  display: flex;
+  align-items: center;
+}
+
+.global-space {
+  display: flex;
+  margin-left: auto;
+  padding-right: 12px;
+}
+
+.global-space-icon {
+  height: 16px;
+  width: 16px;
+  margin: 0 8px;
+  cursor: pointer;
+
+  &--avatar {
+
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.app-menu-trigger {
+  cursor: pointer;
+  padding: 0 24px;
+
+  .bluemix & {
+    fill: #fff;
+  }
+}
+
+.product-nav-list {
+  display: flex;
+  margin: 0 0.5rem;
+
+  li {
+    padding: 0 0.5rem;
+  }
+}

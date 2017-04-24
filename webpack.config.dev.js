@@ -8,7 +8,7 @@ module.exports = {
     './index.js',
   ],
   output: {
-    filename: 'eidos.js',
+    filename: 'app.js',
     path: resolve(__dirname, 'public'),
     publicPath: '/',
   },
@@ -20,6 +20,10 @@ module.exports = {
         test: /\.js$/,
         use: ['babel-loader'],
         exclude: /node_modules/,
+      },
+      {
+        test: /\.scss$/,
+        use: ['ignore-loader'],
       },
     ],
   },

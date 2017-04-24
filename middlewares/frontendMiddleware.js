@@ -30,13 +30,14 @@ const addDevMiddlewares = (app, webpackConfig) => {
 
 const addProdMiddlewares = (app, options) => {
   const publicPath = options.publicPath || '/';
-  const outputPath = options.outputPath ||
-    path.resolve(process.cwd(), 'public');
+  const outputPath =
+    options.outputPath || path.resolve(process.cwd(), 'public');
   app.use(compression());
   app.use(publicPath, express.static(outputPath));
 
   app.get('*', (req, res) =>
-    res.sendFile(path.resolve(outputPath, 'index.html')));
+    res.sendFile(path.resolve(outputPath, 'index.html'))
+  );
 };
 
 module.exports = (app, options) => {

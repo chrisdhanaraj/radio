@@ -1,26 +1,26 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import App from './Containers/App';
+import Bluemix from './Containers/Bluemix';
 
 const renderComponent = Component => {
   render(
     <AppContainer>
-      <Component />
+      <Component grid />
     </AppContainer>,
-    document.getElementById('eidos'),
+    document.getElementById('app')
   );
 };
 
-renderComponent(App);
+renderComponent(Bluemix);
 
 if (module.hot) {
-  module.hot.accept('./Containers/App', () => {
+  module.hot.accept('./Containers/Bluemix', () => {
     render(
       <AppContainer>
-        <App />
+        <Bluemix grid />
       </AppContainer>,
-      document.getElementById('eidos'),
+      document.getElementById('app')
     );
   });
 }
