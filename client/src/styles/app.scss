@@ -1,20 +1,21 @@
-// globals
+@import 'variables/colors';
 
-html {
-  box-sizing: border-box;
-}
+// general
+@import 'globals/reset';
+@import 'globals/layout';
+@import 'globals/typography';
+@import 'globals/forms';
+@import 'globals/buttons';
 
+// components
+@import 'components/calendar';
+@import 'components/datepicker';
+@import 'components/menu';
+@import 'components/player';
+@import 'components/playlist';
+@import 'components/show';
+@import 'components/shows';
+@import 'components/sidebar';
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  font-family: 'HelveticaNeue';
-}
-
-@import 'header';
-@import 'sidenav';
-@import 'dashboard';
-@import 'utility';
+// containers
+@import 'containers/main';

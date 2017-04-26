@@ -1,0 +1,64 @@
+.playlist {
+  list-style: none;
+  background-color: rgba(#111, 0.7);
+  padding: 1rem;
+}
+
+.track {
+  display: flex;
+  padding: 0.15rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: lighten(#6D6E70, 30%);
+
+  &--current {
+    color: #fff;
+    font-family: 'vinyl', sans-serif;
+    padding: 0.25rem 0;
+    font-size: 3rem;
+
+    .track__title {
+      font-style: italic;
+    }
+  }
+
+  &__title {
+    line-height: 1.1;
+    flex: 0 0 300px;
+  }
+
+  &__artist {
+    margin-left: 1rem;
+  }
+}
+
+.playlist-label {
+  display: inline-block;
+  color: #fff;
+  padding-right: 0.75rem;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #fff;
+}
+
+.track-header {
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+
+  &__container {
+    flex: 0 0 300px;
+  }
+
+  &__title,
+  &__artist {
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #fff;
+
+  }
+
+  &__artist {
+    margin-left: 1rem;
+  }
+}

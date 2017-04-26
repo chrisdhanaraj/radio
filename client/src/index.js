@@ -1,12 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
 import App from './Containers/App';
 
-const renderComponent = Component => {
+/*const renderComponent = Component => {
   render(
     <AppContainer>
-      <Component grid />
+      <Component />
     </AppContainer>,
     document.getElementById('app')
   );
@@ -18,9 +17,11 @@ if (module.hot) {
   module.hot.accept('./Containers/App', () => {
     render(
       <AppContainer>
-        <App grid />
+        <App />
       </AppContainer>,
       document.getElementById('app')
     );
   });
-}
+}*/
+
+render(<App />, document.getElementById('app'));

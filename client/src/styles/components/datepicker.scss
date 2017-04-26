@@ -1,0 +1,10 @@
+.datepicker {
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+.datepicker-days,
+.datepicker-hours {
+  padding-right: 5%;
+  flex: 1;
+}

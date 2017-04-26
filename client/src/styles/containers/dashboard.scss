@@ -1,0 +1,28 @@
+@import '../variables/colors';
+
+.dashboard {
+  display: flex;
+}
+
+.dashboard-nav {
+  padding: 0 2rem;
+}
+
+.dashboard-content {
+  padding: 0 2rem;
+}
+
+.dashboard-nav-list {
+  background-color: lighten($dark-grey, 10%);
+  padding: 1rem 2rem;;
+  color: #fff;
+  list-style: none;
+
+  a {
+    display: block;
+    color: inherit;
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
+    text-decoration: none;
+  }
+}
