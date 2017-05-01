@@ -1,10 +1,6 @@
-body {
-  overflow: hidden;
-}
-
-#root{
-  overflow-y: scroll;
-}
+// #root{
+//   overflow-y: scroll;
+// }
 
 table{
   border-collapse: collapse;
@@ -19,7 +15,7 @@ table{
   background: black;
   transition: all 1s ease-out;
   z-index: 99;
-  overflow-y: hidden;
+  overflow: auto;
   padding: 30px;
 }
 
@@ -32,6 +28,9 @@ table{
   width: 100%;
   text-align: left;
   table-layout: fixed;
+  h1{
+    margin-bottom: 42px;
+  }
   .headings {
       text-transform: uppercase;
       border-bottom: 2px solid #fff;
@@ -46,9 +45,21 @@ table{
     border-bottom: 2px solid #fff;
     td {
       position: relative;
+      padding: 5px;
       &:first-child {
         padding: .25em 0 5.5em;
       }
     }
   }
+}
+
+.slot {
+  h6{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+  }
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }

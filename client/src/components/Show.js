@@ -4,6 +4,7 @@ import classNames from 'classnames';
 const Show = props => {
   const rootClass = classNames({
     show: true,
+    'show-active': props.active,
   });
 
   return (

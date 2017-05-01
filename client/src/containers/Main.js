@@ -21,14 +21,12 @@ export default class Main extends Component {
   componentDidMount() {}
 
   toggleCalendar = () => {
-    // what this does
     this.setState({
       showCalendar: !this.state.showCalendar,
     });
   };
 
   toggleShows = () => {
-    // what this does
     this.setState({
       showShows: !this.state.showShows,
     });

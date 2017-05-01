@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import Slot from '../components/Slot';
 
 const Calendar = props => {
   const rootClass = classNames({
@@ -22,11 +23,11 @@ const Calendar = props => {
           </tr>
           <tr className="timeslot">
             <td>9:00AM</td>
+            <Slot />
             <td />
             <td />
-            <td />
-            <td />
-            <td />
+            <Slot />
+            <Slot />
           </tr>
           <tr className="timeslot">
             <td>10:00AM</td>
@@ -46,7 +47,7 @@ const Calendar = props => {
           </tr>
           <tr className="timeslot">
             <td>12:00PM</td>
-            <td />
+            <Slot />
             <td />
             <td />
             <td />
