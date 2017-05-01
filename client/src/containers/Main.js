@@ -13,27 +13,40 @@ export default class Main extends Component {
     super();
 
     this.state = {
-      showCalendar: false,
-      showShows: false,
+      // showCalendar: false,
+      // showShows: false,
+      activeTab: ""
     };
   }
 
   componentDidMount() {}
 
   toggleCalendar = () => {
-    this.setState({
-      showCalendar: !this.state.showCalendar,
-    });
+    if (this.state.activeTab=== "calendar"){
+      this.setState({
+        activeTab: ""
+      });
+    } else {
+      this.setState({
+        activeTab: "calendar",
+      });
+    }
   };
 
   toggleShows = () => {
-    this.setState({
-      showShows: !this.state.showShows,
-    });
+    if (this.state.activeTab=== "shows"){
+      this.setState({
+        activeTab: ""
+      });
+    } else {
+      this.setState({
+        activeTab: "shows",
+      });
+    }
   };
 
   render() {
-    const { showCalendar, showShows } = this.state;
+    const { activeTab } = this.state;
 
     const containerStyle = {
       height: '100vh',
@@ -51,8 +64,8 @@ export default class Main extends Component {
       <div className="main" style={containerStyle}>
         <div className="parallax" style={backgroundStyle} />
         <div className="main-content">
-          <Calendar active={showCalendar} />
-          <Showlist active={showShows} />
+          <Calendar active={activeTab === "calendar"} />
+          <Showlist active={activeTab === "shows"} />
           <Playlist />
         </div>
         <div className="main-sidebar">
