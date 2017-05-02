@@ -31,7 +31,7 @@ const Calendar = props => {
           </tr>
           <tr className="timeslot">
             <td>10:00AM</td>
-            <td />
+            <Slot title="DJ Darlene" dj="The worst person ever" />
             <td />
             <td />
             <td />
