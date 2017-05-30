@@ -1,0 +1,67 @@
+.live {
+  display: flex;
+  color: #fff;
+
+  &--show {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show-list__item {
+    min-width: 300px;
+  }
+}
+
+.live-content {
+  padding: 0 15px;
+  flex: 4;
+}
+
+.live-sidebar {
+  padding: 0 15px;
+  flex: 1;
+}
+
+.tracklist-live {
+  margin-top: 2rem;
+  width: 500px;
+
+  li {
+    display: flex;
+    margin: 1rem -0.5rem;
+
+    input, span, button {
+      margin: 0 0.5rem;
+    }
+
+    input, span {
+      flex: 2
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      line-height: 24px;
+      padding: 0.5rem;
+      background: transparent;
+      border: 1px solid #fff;
+      width: 45px;
+      color: #fff;
+
+      svg {
+        fill: #fff;
+      }
+
+      span {
+        position: relative;
+        top: -5px;
+      }
+    }
+
+    &:first-of-type {
+      margin-bottom: 4rem;
+    }
+  }
+}

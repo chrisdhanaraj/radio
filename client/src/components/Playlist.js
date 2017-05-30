@@ -20,44 +20,12 @@ const Playlist = props => {
           <span className="track__artist">John Powell</span>
         </li>
         <li className="playlist__item track">
-          <span className="track__title">Me, Myself, and I</span>
-          <span className="track__artist">G-Eazy</span>
-        </li>
-        <li className="playlist__item track">
           <span className="track__title">Radioactive</span>
           <span className="track__artist">Imagine Dragons</span>
         </li>
         <li className="playlist__item track">
           <span className="track__title">Warriors</span>
           <span className="track__artist">Imagine Dragons</span>
-        </li>
-        <li className="playlist__item track">
-          <span className="track__title">The Dog Days are Coming</span>
-          <span className="track__artist">G-Eazy</span>
-        </li>
-        <li className="playlist__item track">
-          <span className="track__title">We Are the Champions</span>
-          <span className="track__artist">Queen</span>
-        </li>
-        <li className="playlist__item track">
-          <span className="track__title">Forbidden Friendship</span>
-          <span className="track__artist">John Powell</span>
-        </li>
-        <li className="playlist__item track">
-          <span className="track__title">Me, Myself, and I</span>
-          <span className="track__artist">G-Eazy</span>
-        </li>
-        <li className="playlist__item track">
-          <span className="track__title">Radioactive</span>
-          <span className="track__artist">Imagine Dragons</span>
-        </li>
-        <li className="playlist__item track">
-          <span className="track__title">Warriors</span>
-          <span className="track__artist">Imagine Dragons</span>
-        </li>
-        <li className="playlist__item track">
-          <span className="track__title">The Dog Days are Coming</span>
-          <span className="track__artist">G-Eazy</span>
         </li>
       </ul>
     </section>

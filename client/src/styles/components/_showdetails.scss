@@ -1,0 +1,17 @@
+.show-details {
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+  }
+
+  &__heading {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

@@ -1,12 +1,15 @@
 .btn {
   background-color: #fff;
   border: 2px solid #333;
-  font-size: 1rem;
+  font-size: 12px;
   padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
 
   &:hover,
   &:focus {
-    background-color: #333;
+    background-color: #000;
+    border: 2px solid #fff;
     color: #fff;
   }
 

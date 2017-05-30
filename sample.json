@@ -1,0 +1,70 @@
+ window.setTimeout(() =>{
+      const data ={
+        show: {
+          showName: 'Toolsday',
+          showDescription: 'Twenty minute of tech tools tips and tricks',
+            },
+        episodeName: 'GraphQL',
+        episodeDescription: 'Una and I talk about GraphQL and ford through some unfamiliar waters.',
+        episodeGif: 'https: //pbs.twimg.com/profile_images/674304988261167104/vXkaU8U2.png',
+        episodeBackground: 'http: //www.sciencemag.org/sites/default/files/styles/article_main_large/public/sn-musicmeteors.png?itok=qTCeu59e',
+        live: true,
+        tracklist: [
+                  {
+            songTitle: 'Lawrence of Arabia',
+            songArtist: 'The BBC Concert Orchestra',
+                  },
+                  {
+            songTitle: 'Rescue',
+            songArtist: 'Carter Burwell',
+                  },
+                  {
+            songTitle: 'Planet Earth II Suite',
+            songArtist: 'Hans Zimmer',
+                  },
+                  {
+            songTitle: 'Rogue One',
+            songArtist: 'Michael Giacchino',
+                  },
+                  {
+            songTitle: `The Lion's Heart`,
+            songArtist: 'Audiomachine',
+                  },
+                  {
+            songTitle: 'The Imitiation Game',
+            songArtist: 'Alexandre Desplat',
+                  },
+                  {
+            songTitle: 'Rescue',
+            songArtist: 'Carter Burwell',
+                  },
+                  {
+            songTitle: 'Planet Earth II Suite',
+            songArtist: 'Hans Zimmer',
+                  },
+                  {
+            songTitle: 'Rogue One',
+            songArtist: 'Michael Giacchino',
+                  },
+                  {
+            songTitle: `The Lion's Heart`,
+            songArtist: 'Audiomachine',
+                  },
+                  {
+            songTitle: 'The Imitiation Game',
+            songArtist: 'Alexandre Desplat',
+                  },
+                  {
+            songTitle: 'Rescue',
+            songArtist: 'Carter Burwell',
+                  },
+                  {
+            songTitle: 'Planet Earth II Suite',
+            songArtist: 'Hans Zimmer',
+                  },
+                  {
+            songTitle: 'Rogue One',
+            songArtist: 'Michael Giacchino',
+                  },
+            ],
+      };

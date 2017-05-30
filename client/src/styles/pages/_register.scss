@@ -1,0 +1,96 @@
+.register {
+  padding: 2rem 0;
+  background: black;
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    margin-bottom: 70px;
+  }
+
+  .h1 {
+    font-weight: 700;
+  }
+}
+
+.register-form {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 0 10px;
+
+  @media (min-width: 668px) {
+    padding: 0;
+    width: 60%;
+  }
+}
+
+.register-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+  }
+
+  input {
+    font-size: 14px;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    border: 0;
+    padding: 16px;
+  }
+
+  &--right {
+    padding-right: 10px;
+    justify-content: flex-end;
+  }
+}
+
+.register-input-group {
+  width: 100%;
+  padding: 0 10px;
+  position: relative;
+
+  input {
+    width: 100%;
+  }
+}
+
+
+.register-row-input:focus ~ .register-row-label, .register-row-input:valid ~ .register-row-label {
+  top:-20px;
+  font-size:14px;
+  color:#fff;
+}
+
+.register-row-label {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  color: $dark-grey;
+  pointer-events: none;
+  transition:0.2s ease all;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.register-row-svg {
+  fill: $grey;
+  position: absolute;
+  top: 13px;
+  right: 20px;
+
+  &--good {
+    fill: #4CAF50;
+  }
+
+  &--bad {
+    fill: #F44336;
+  }
+}

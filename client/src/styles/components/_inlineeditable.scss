@@ -1,0 +1,11 @@
+.inline-editable {
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    padding: 2rem;
+    fill: #fff;
+  }
+}

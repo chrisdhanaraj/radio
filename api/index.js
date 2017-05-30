@@ -1,26 +1,35 @@
 const express = require('express');
-const users = require('./users'); // this is where you'd put the actual functions
+const users = require('./users');
+const shows = require('./shows');
+const episodes = require('./episodes');
 
 const router = express.Router();
 
-// sign up
+// users
 router.post('/users', users.createUser);
-
-// get all users
 router.get('/users', users.getAllUsers);
-
-// get specific user
 router.get('/user/:id', users.getUser);
-
-// update user
+router.patch('/users/updatePassword/:id', users.updatePassword);
 router.patch('/users/:id', users.updateUser);
-
-// check whether user exists
 router.post('/users/check', users.checkIfExists);
-
-// log a student in
 router.post('/users/authenticate', users.authenticateUser);
 
-router.get('/class/:id/:className', classAPI.getClass);
+// shows
+router.post('/shows', shows.createShow);
+router.get('/shows', shows.getAllShows);
+router.post('/show', shows.getOwnShows);
+router.get('/show/:id', shows.getShow);
+router.patch('/shows/:id', shows.updateShow);
+router.post('/shows/check', shows.checkIfUnique);
+router.delete('/shows/:id', shows.deleteShow);
+
+// episodes
+router.get('/episodes/live', episodes.getLive);
+router.post('/episodes/live', episodes.goLive);
+router.post('/episodes', episodes.createEpisode);
+router.get('/episodes', episodes.getAllEpisodes);
+router.get('/episode/:id', episodes.getEpisode);
+router.patch('/episodes/:id', episodes.updateEpisode);
+router.delete('/episodes/:id', episodes.deleteEpisode);
 
 module.exports = router;

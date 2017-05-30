@@ -1,0 +1,21 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  min-height: 100vh;
+
+  input {
+    background: transparent;
+  }
+}
+
+.login-box {
+  width: 215px;
+}
+
+.error-box {
+  padding: 15px 0;
+  font-size: 14px;
+  color: #fff;
+}

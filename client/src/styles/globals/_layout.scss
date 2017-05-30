@@ -2,7 +2,42 @@
   height: 100vh;
 }
 
-.internal-view {
-  max-width: 800px;
-  margin: 0 auto;
+.layout {
+  width: 800px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+
+  &--centered-vert {
+    align-items: center;
+  }
+}
+
+.col {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.col-0 {
+  padding: 0 10px;
+}
+
+
+.dash-row {
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 10px;
+}
+
+.dash-col {
+  flex: 1;
+  padding: 0 10px;
 }

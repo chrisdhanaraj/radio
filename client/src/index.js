@@ -1,9 +1,10 @@
 import React from 'react';
-import { render } from 'react-dom';
-import App from './Containers/App';
+import ReactDOM from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
+import App from './containers/App';
 
-/*const renderComponent = Component => {
-  render(
+const render = Component => {
+  ReactDOM.render(
     <AppContainer>
       <Component />
     </AppContainer>,
@@ -11,17 +12,10 @@ import App from './Containers/App';
   );
 };
 
-renderComponent(App);
+render(App);
 
 if (module.hot) {
-  module.hot.accept('./Containers/App', () => {
-    render(
-      <AppContainer>
-        <App />
-      </AppContainer>,
-      document.getElementById('app')
-    );
+  module.hot.accept('./containers/App', () => {
+    render(App);
   });
-}*/
-
-render(<App />, document.getElementById('app'));
+}

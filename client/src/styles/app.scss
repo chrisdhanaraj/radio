@@ -16,6 +16,19 @@
 @import 'components/show';
 @import 'components/shows';
 @import 'components/sidebar';
+@import 'components/sidenav';
+@import 'components/episodetable';
+@import 'components/inlineeditable';
+@import 'components/showdetails';
+@import 'components/floatinginput';
+@import 'components/selectgroup';
 
 // containers
 @import 'containers/main';
+@import 'containers/dashboard';
+
+// pages
+@import 'pages/register';
+@import 'pages/manageshow';
+@import 'pages/login';
+@import 'pages/live';

@@ -1,0 +1,60 @@
+.dashboard {
+  min-height: 100vh;
+  color: #fff;
+  background-color: #000;
+
+  .h1 {
+    font-weight: 700;
+  }
+
+  p {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    padding: 1rem;
+  }
+
+  input, textarea {
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+  }
+}
+
+.dashboard-nav {
+  display: flex;
+  list-style: none;
+  border-bottom: 1px solid #fff;
+  flex-direction: column;
+
+  @media (min-width: 525px) {
+    flex-direction: row;
+  }
+}
+
+.dashboard-nav__item {
+  &--logout {
+    @media (min-width: 525px) {
+      margin-left: auto;
+    }
+  }
+}
+
+.dashboard-nav__link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+
+  &--active {
+    color: #000;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,38 @@
+.show-list {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.show-list__item {
+  cursor: pointer;
+  flex-basis: 50%;
+  min-width: 50%;
+  padding: 0 5%;
+  height: 460px;
+  text-decoration: none;
+
+  @media (min-width: 500px) {
+    flex-basis: 25%;
+    min-width: 25%;
+    padding: 0 2.5%;
+  }
+}
+
+.show-list__item-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+.show-list__item-footer {
+  padding: 1.5rem 0.5rem;
+  margin-top: auto;
+
+  background-color: rgba(#000, 0.8);
+
+  p {
+    color: #fff;
+  }
+}

@@ -1,14 +1,18 @@
 .form-group {
   padding: 0.5rem 0;
+}
 
-  input,
-  textarea {
-    padding: 1rem 0;
-    outline: none;
-    border: 0;
-    border-bottom: 1px solid #333;
-    min-width: 150px;
-  }
+input,
+textarea {
+  padding: 1rem 0;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  min-width: 150px;
+}
+
+input[readonly], textarea[readonly] {
+  border-bottom: 1px solid transparent;
 }
 
 .input-label {
