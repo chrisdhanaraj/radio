@@ -10,6 +10,7 @@ const Input = glamorous.input({
   color: '#fff',
   backgroundColor: 'transparent',
   width: '100%',
+  marginTop: '0.5rem',
   marginBottom: '2rem',
   outline: 0,
   border: 0,
@@ -18,13 +19,13 @@ const Input = glamorous.input({
   ':focus ~ label': {
     transition: '0.2s ease all',
     top: '-25px',
-    fontSize: '10px',
+    fontSize: '12px',
     color: '#fff',
   },
   ':valid ~ label': {
     transition: '0.2s ease all',
     top: '-25px',
-    fontSize: '10px',
+    fontSize: '12px',
     color: '#fff',
   },
 });

@@ -4,7 +4,7 @@ import { Button } from '../elements/elements';
 import FloatingInput from '../components/FloatingInput';
 import { login, finishAuthentication } from '../utility/AuthService';
 
-const { Div } = glamorous;
+const { Div, H1 } = glamorous;
 
 const LoginContainer = glamorous.div({
   display: 'flex',
@@ -61,7 +61,7 @@ export default class Login extends Component {
     return (
       <LoginContainer>
         <LoginBox>
-          <h1>Login</h1>
+          <H1 marginBottom="3rem">Login</H1>
 
           <form onSubmit={this.handleSubmit}>
             <FloatingInput

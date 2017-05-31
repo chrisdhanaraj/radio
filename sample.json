@@ -6,7 +6,7 @@
             },
         episodeName: 'GraphQL',
         episodeDescription: 'Una and I talk about GraphQL and ford through some unfamiliar waters.',
-        episodeGif: 'https: //pbs.twimg.com/profile_images/674304988261167104/vXkaU8U2.png',
+        episodeGif: 'https://pbs.twimg.com/profile_images/674304988261167104/vXkaU8U2.png',
         episodeBackground: 'http: //www.sciencemag.org/sites/default/files/styles/article_main_large/public/sn-musicmeteors.png?itok=qTCeu59e',
         live: true,
         tracklist: [

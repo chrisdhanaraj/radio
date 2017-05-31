@@ -166,7 +166,7 @@ export default class Live extends Component {
         fetchWithHeaders(`/api/episodes/${episodeId}`, {
           method: 'PATCH',
           body: JSON.stringify({
-            tracklist: tracklist,
+            tracklist: newTracklist,
           }),
         }).then(res => {
           console.log('sent udpate: ', res);

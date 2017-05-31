@@ -84,7 +84,7 @@ export default class Register extends Component {
     } = this.state;
 
     return (
-      <CenteredDiv>
+      <CenteredDiv css={{ height: '100vh' }}>
         <Div width="500px">
           <h1 className="h1" style={{ marginBottom: '2rem' }}>REGISTER</h1>
 
