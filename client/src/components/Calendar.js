@@ -14,12 +14,15 @@ const CalenderContainer = glamorous.div(props => ({
   transition: 'transform 0.2s cubic-bezier(0,0,0.3,1)',
   willChange: 'transform',
   padding: '0 1rem',
+  overflow: 'auto',
 }));
 
 const Table = glamorous.table(props => ({
   height: '100%',
   width: '100%',
   textAlign: 'left',
+  borderCollapse: 'collapse',
+  borderSpacing: 0,
 }));
 
 const TableRowHeading = glamorous.tr({
@@ -34,6 +37,27 @@ const TableRowHeading = glamorous.tr({
   '& > td': {
     padding: '5px',
   },
+});
+
+const HeaderCell = glamorous.th({
+  height: '70px',
+  padding: '0.5rem',
+  border: '1px solid transparent',
+  borderRight: '1px solid rgba(256, 256, 256, 0.1)',
+})
+
+const Cell = glamorous.td({
+  height: '70px',
+  padding: '0.5rem',
+  border: '1px solid transparent',
+  borderRight: '1px solid rgba(256, 256, 256, 0.1)',
+});
+
+const FilledCell = glamorous(Cell)({
+  backgroundColor: '#fff',
+  border: '1px solid #000',
+  borderRight: '1px solid #000',
+  color: '#000',
 });
 
 export default class Calendar extends Component {
@@ -52,11 +76,10 @@ export default class Calendar extends Component {
   }
 
   getTimeSchedule = time => {
-    const counter = 1;
     const timeArray = [
-      <td>
+      <Cell key={time}>
         {time.label}
-      </td>,
+      </Cell>,
     ];
     const { shows } = this.state;
 
@@ -69,20 +92,17 @@ export default class Calendar extends Component {
       });
 
       if (match) {
-        console.log(match);
-      }
-      if (match) {
         timeArray.push(
-          <td>
+          <FilledCell key={match.showName}>
             <strong>{match.showName}</strong>
             {' '}
             <br />
             {' '}
             {match.showOwner.djName}
-          </td>
+          </FilledCell>
         );
       } else {
-        timeArray.push(<td />);
+        timeArray.push(<Cell key={i} />);
       }
     }
 
@@ -90,7 +110,9 @@ export default class Calendar extends Component {
   };
 
   render() {
+
     const { open } = this.props;
+
     const timeslots = [
       { value: 9, label: '9:00 A.M.' },
       { value: 10, label: '10:00 A.M.' },
@@ -114,16 +136,16 @@ export default class Calendar extends Component {
         <Table>
           <tbody>
             <TableRowHeading>
-              <th>CST</th>
-              <th>Monday</th>
-              <th>Tuesday</th>
-              <th>Wednesday</th>
-              <th>Thursday</th>
-              <th>Friday</th>
+              <HeaderCell>CST</HeaderCell>
+              <HeaderCell>Monday</HeaderCell>
+              <HeaderCell>Tuesday</HeaderCell>
+              <HeaderCell>Wednesday</HeaderCell>
+              <HeaderCell>Thursday</HeaderCell>
+              <HeaderCell>Friday</HeaderCell>
             </TableRowHeading>
-            {timeslots.map(slot => {
+            {timeslots.map((slot, index) => {
               return (
-                <tr>
+                <tr key={index}>
                   {this.getTimeSchedule(slot)}
                 </tr>
               );

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import glamorous from 'glamorous';
-import { Button } from '../elements/elements';
-import { Container, Row, Col } from '../elements/layout';
+import { Button, Container, Row, Col } from '../elements';
 import ShowDetails from '../components/ShowDetails';
 import AddShow from '../components/AddShow';
 import DashboardShowList from '../components/DashboardShowList';

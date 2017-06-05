@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import glamorous from 'glamorous';
-import { Row, Col } from '../elements/layout';
-import { Label } from '../elements/typography';
-import Select from './Select';
+import { Row, Col, Label, Select } from '../elements';
 
 const { Div } = glamorous;
 

@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import jwtDecode from 'jwt-decode';
 import glamorous from 'glamorous';
 import { signup, finishAuthentication } from '../utility/AuthService';
-import FloatingInput from '../components/FloatingInput';
-import { Row, Col, CenteredDiv } from '../elements/layout';
-import { Button } from '../elements/elements';
+import { Button, FloatingInput, Row, Col, CenteredDiv } from '../elements';
 
 const { Div, Svg } = glamorous;
 

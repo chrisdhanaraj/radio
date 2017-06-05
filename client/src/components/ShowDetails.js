@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import glamorous from 'glamorous';
-import { Input, TextArea } from './Input';
-import { Row, Col } from '../elements/layout';
-import { Button } from '../elements/elements';
-import { Label } from '../elements/typography';
+import { Input, TextArea, Row, Col, Button, Label } from '../elements';
 import SideNav from './SideNav';
 import DatePicker from './DatePicker';
 import { fetchWithHeaders } from '../utility/AuthService';

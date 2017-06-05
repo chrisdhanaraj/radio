@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import io from 'socket.io-client';
 import glamorous from 'glamorous';
 import { getTokenDetails, fetchWithHeaders } from '../utility/AuthService';
-import { Button } from '../elements/elements';
-import { Label } from '../elements/typography';
-import { Input, TextArea } from '../components/Input';
 import {
+  Button,
+  Label,
+  Input,
+  TextArea,
   BackgroundContainer,
   SidebarContainer,
   Container,
-  Row,
-  Col,
-} from '../elements/layout';
+} from '../elements';
 import DashboardShowList from '../components/DashboardShowList';
 import { AddTrack, TrackItem, Tracks } from '../components/LiveItems';
 

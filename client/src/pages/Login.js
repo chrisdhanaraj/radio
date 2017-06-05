@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import glamorous from 'glamorous';
-import { Button } from '../elements/elements';
-import FloatingInput from '../components/FloatingInput';
+import { Button, FloatingInput } from '../elements';
 import { login, finishAuthentication } from '../utility/AuthService';
 
 const { Div, H1 } = glamorous;

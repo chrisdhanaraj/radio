@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Button } from '../elements/elements';
-import FloatingInput from './FloatingInput';
+import { Button, FloatingInput } from '../elements';
 import DatePicker from './DatePicker';
 import SideNav from './SideNav';
-import Select from './Select';
 import { getTokenDetails, fetchWithHeaders } from '../utility/AuthService';
 
 export default class AddShow extends Component {
@@ -12,7 +10,6 @@ export default class AddShow extends Component {
     showDescription: '',
     showTimeDay: 0,
     showTimeHour: 0,
-    showLength: 0,
     showPicture: '',
   };
 
@@ -26,7 +23,6 @@ export default class AddShow extends Component {
       showDescription,
       showTimeDay,
       showTimeHour,
-      showLength,
       showPicture,
     } = this.state;
 
@@ -42,7 +38,6 @@ export default class AddShow extends Component {
           day: showTimeDay,
           hour: showTimeHour,
         },
-        showLength,
         showPicture,
       }),
     }).then(res => {
@@ -68,14 +63,13 @@ export default class AddShow extends Component {
       showDescription,
       showTimeDay,
       showTimeHour,
-      showLength,
       showPicture,
     } = this.state;
 
     return (
       <SideNav toggleMenu={toggleMenu} open={open}>
-        <div className="add-show side-nav__content">
-          <h1 className="h1" style={{ marginBottom: '2rem' }}>Add Show</h1>
+        <div>
+          <h1 style={{ marginBottom: '2rem' }}>Add Show</h1>
           <form onSubmit={this.handleSubmit}>
 
             <FloatingInput
@@ -119,20 +113,7 @@ export default class AddShow extends Component {
               onTimeChange={this.handleChange}
             />
 
-            <Select
-              style={{
-                marginTop: '1rem',
-              }}
-              value={showLength}
-              label="Length"
-              name="showLength"
-              onChange={this.handleChange}
-            >
-              <option value={30}>30</option>
-              <option value={60}>60</option>
-            </Select>
-
-            <Button style={{ marginTop: '1rem' }} className="btn btn--primary">
+            <Button style={{ marginTop: '1rem' }}>
               Submit
             </Button>
           </form>

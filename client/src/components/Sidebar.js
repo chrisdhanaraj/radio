@@ -1,11 +1,11 @@
 import React, { PureComponent } from 'react';
+import Player from './Player';
 import glamorous from 'glamorous';
 import { css } from 'glamor';
-import { ActiveButton, Button } from '../elements/elements';
 
 const { Div } = glamorous;
 
-const animationStyles = props => {
+const animationStyles = () => {
   const rotate = css.keyframes({
     '0%': {
       transform: 'rotate(0deg)',
@@ -17,29 +17,6 @@ const animationStyles = props => {
     animation: `${rotate} 50s linear infinite`,
   };
 };
-
-const PlayingContainer = glamorous.div({
-  borderBottom: '1px solid #f0f0f0',
-  paddingBottom: '2rem',
-});
-
-const Live = glamorous.div({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  marginBottom: '1rem',
-  '& > img': {
-    marginRight: '0.5rem',
-  },
-});
-
-const QualityContainer = glamorous.div({
-  display: 'flex',
-  justifyContent: 'center',
-  '& > button': {
-    marginRight: '0.25rem',
-  },
-});
 
 const EpisodeContainer = glamorous.div({
   margin: '2rem 0 1rem',
@@ -74,27 +51,20 @@ const NavListItem = glamorous.li({
   textTransform: 'uppercase',
 });
 
-const playingComponent = (live, muted) => {
-  if (!live) {
-    return null;
-  }
-
-  return (
-    <PlayingContainer>
-      <Live>
-        {muted
-          ? <img src="/images/play.svg" />
-          : <img src="/images/pause.svg" />}
-        {muted ? <p>Muted</p> : <p>Playing Live</p>}
-      </Live>
-      <QualityContainer>
-        <Button>Low</Button>
-        <Button active>Standard</Button>
-        <Button>High</Button>
-      </QualityContainer>
-    </PlayingContainer>
-  );
-};
+const Gif = glamorous.div(
+  props => ({
+    width: '200px',
+    height: '200px',
+    borderRadius: '50%',
+    backgroundSize: 'cover',
+    backgroundImage: props.episodeGif !== undefined
+      ? `url('${props.episodeGif}')`
+      : `url('/images/ibmcr.svg')`,
+    backgroundRepeat: 'no-repeat',
+    marginBottom: '1rem',
+  }),
+  animationStyles
+);
 
 export default class Sidebar extends PureComponent {
   state = {
@@ -114,26 +84,13 @@ export default class Sidebar extends PureComponent {
 
     const { muted } = this.state;
 
-    const Gif = glamorous.div(
-      {
-        width: '200px',
-        height: '200px',
-        borderRadius: '50%',
-        backgroundSize: 'cover',
-        backgroundImage: `url('${episodeGif}')`,
-        backgroundRepeat: 'no-repeat',
-        marginBottom: '1rem',
-      },
-      animationStyles
-    );
-
     return (
       <Div height="100%" display="flex" flexDirection="column">
-        <Div display="flex" justifyContent="center">
-          <Gif />
+        <Div className="gif-contianer" display="flex" justifyContent="center">
+          <Gif episodeGif={episodeGif} />
         </Div>
 
-        {playingComponent(live, muted)}
+        <Player />
 
         {live &&
           (episodeName !== '' || episodeDescription !== '') &&

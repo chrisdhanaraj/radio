@@ -9,22 +9,18 @@ import {
   BackgroundContainer,
   MainContainer,
   SidebarContainer,
-} from '../elements/layout';
+} from '../elements';
 import { fetchWithHeaders } from '../utility/AuthService';
 
 const socket = io('/');
 
 export default class Main extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      showCalendar: false,
-      showShows: false,
-      nowPlaying: {},
-      loading: true,
-    };
-  }
+  state = {
+    showCalendar: false,
+    showShows: false,
+    nowPlaying: {},
+    loading: true,
+  };
 
   componentDidMount() {
     socket.on('showStart', data => {
@@ -36,18 +32,16 @@ export default class Main extends Component {
 
     socket.on('update', update => {
       const merge = Object.assign({}, this.state.nowPlaying, update);
-
-      console.log(merge);
-
       this.setState({
         nowPlaying: merge,
       });
     });
 
     fetchWithHeaders('/api/episodes/live').then(data => {
-      console.log('data', data);
+      const showCalendar = !data.live;
 
       this.setState({
+        showCalendar,
         nowPlaying: data,
         loading: false,
       });
@@ -82,9 +76,6 @@ export default class Main extends Component {
     }
 
     const { tracklist, episodeBackground, ...other } = nowPlaying;
-    if (!other.live) {
-      showCalendar = true;
-    }
 
     return (
       <BackgroundContainer

@@ -1,7 +1,6 @@
 import React, { Component, PureComponent } from 'react';
 import glamorous from 'glamorous';
-import { Input } from './Input';
-import { Button } from '../elements/elements';
+import { Input, Button } from '../elements';
 
 export const Tracks = glamorous.ul({
   listStyle: 'none',
