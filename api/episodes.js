@@ -13,8 +13,6 @@ const goLive = (req, res) => {
     },
     (err, result) => {
       if (err) throw err;
-      console.log('update many');
-      console.log(result);
 
       episode.save((saveErr, episode) => {
         if (saveErr) throw saveErr;

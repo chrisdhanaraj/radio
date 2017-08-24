@@ -189,8 +189,8 @@ export default class ShowDetails extends Component {
                         <tr key={episode.episodeName}>
                           <td>{episode.episodeName}</td>
                           <td>{episode.episodeDescription}</td>
-                          <td
-                          >{`${date.getMonth() + 1} / ${wwwdate.getDate()}`}</td>
+                          <td>{`${date.getMonth() +
+                            1} / ${date.getDate()}`}</td>
                         </tr>
                       );
                     })
